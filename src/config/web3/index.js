@@ -9,4 +9,4 @@ function getLibrary(provider) {
     return new Web3(provider)
 }
 
-export { getLibrary };
+export { getLibrary, connector };
