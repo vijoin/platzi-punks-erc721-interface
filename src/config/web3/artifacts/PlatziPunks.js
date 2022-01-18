@@ -1,8 +1,8 @@
 const PlatziPunksArtifact = {
-    address: {
-        4: "0xA70BC4036Fe47dce0E3C5D8f638a22F5eD91dE62",
-    },
-    abi: [
+  address: {
+    4: "0xA70BC4036Fe47dce0E3C5D8f638a22F5eD91dE62",
+  },
+  abi: [
 		{
 			"inputs": [
 				{
@@ -781,7 +781,7 @@ const PlatziPunksArtifact = {
 			"stateMutability": "nonpayable",
 			"type": "function"
 		}
-	]
-}
+	],
+};
 
 export default PlatziPunksArtifact;

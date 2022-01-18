@@ -5,13 +5,14 @@ import usePlatziPunks from "../../hooks/usePlatziPunks";
 const Home = () => {
   const { active } = useWeb3React();
   const [maxSupply, setMaxSupply] = useState();
+
   const platziPunks = usePlatziPunks();
-  const getMaxSupply = useCallback( async () => {
+
+  const getMaxSupply = useCallback(async () => {
     if (platziPunks) {
-      const result  = await platziPunks.methods.maxSupply().call();
+      const result = await platziPunks.methods.maxSupply().call();
       setMaxSupply(result);
     }
-
   }, [platziPunks]);
 
   useEffect(() => {
@@ -19,9 +20,10 @@ const Home = () => {
   }, [getMaxSupply]);
 
   if (!active) return "Conecta tu wallet";
+
   return (
     <>
-      <p>Max Supply: {maxSupply}</p>
+      <p>Max supply: {maxSupply}</p>
     </>
   );
 };

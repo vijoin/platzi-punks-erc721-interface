@@ -24,3 +24,4 @@ yarn-error.log*
 
 # Bad code
 /not-working
+/src_old2
